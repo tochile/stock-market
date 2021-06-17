@@ -5,6 +5,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import utils
 import numpy
+import tensorflow
 
 
 # Load the data
