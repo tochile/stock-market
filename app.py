@@ -69,7 +69,7 @@ def landing_function():
                            all_prediction_data=[],
                            prediction_date="", dates=[], all_data=[], len=len([]))
 
-@app.route('/process', methods=['GET','POST'])
+@app.route('/process', methods=['POST'])
 def process():
 
     stock_file_name = request.form['stockfile']
