@@ -69,7 +69,7 @@ def landing_function():
                            all_prediction_data=[],
                            prediction_date="", dates=[], all_data=[], len=len([]))
 
-@app.route('/process', methods=['POST'])
+@app.route('/process', methods=['GET','POST'])
 def process():
 
     stock_file_name = request.form['stockfile']
@@ -88,6 +88,4 @@ def process():
 
 # main driver function
 if __name__ == '__main__':
-    # run() method of Flask class runs the application
-    # on the local development server.
-    app.run()
+    app.run(debug=True)
